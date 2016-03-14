@@ -30,6 +30,7 @@ label scene1:
     scene bg bedroom
     with fade
 
+    play music "velvet.mp3"
     k "Where the fuck am I."
 
     show salt normal
