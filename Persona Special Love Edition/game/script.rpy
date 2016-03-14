@@ -5,6 +5,15 @@
 
 # Declare characters used by this game.
 define e = Character('Eileen', color="#c8ffc8")
+define k = Character('Kuki', color="#ff3333")
+define zack = Character('Zacko', color="#2653d9")
+define wynd = Character('Wynko', color="#4d66b3")
+define kev = Character('Kekko', color="#80ff00")
+define alk = Character('Alkko', color="#b30000")
+define salt = Character('Saltko', color="#ffffff")
+define sanv = Character('Sanko', color="#993366")
+define maid = Character('Meido', color="#00cc99")
+define idol = Character('Geoffko', color="#ff66ff")
 
 
 # The game starts here.
