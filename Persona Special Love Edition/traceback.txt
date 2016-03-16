@@ -3,7 +3,7 @@
 While running game code:
   File "game/script.rpy", line 30, in script call
     call opening
-  File "game/script.rpy", line 121, in script
+  File "game/script.rpy", line 122, in script
     jump good_end
 ScriptError: could not find label 'good_end'.
 
@@ -12,7 +12,7 @@ ScriptError: could not find label 'good_end'.
 Full traceback:
   File "game/script.rpy", line 30, in script call
     call opening
-  File "game/script.rpy", line 121, in script
+  File "game/script.rpy", line 122, in script
     jump good_end
   File "H:\Program Files\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
     rv = renpy.game.script.lookup(target)

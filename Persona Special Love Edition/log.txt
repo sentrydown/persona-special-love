@@ -1,33 +1,34 @@
-Tue Mar 15 20:00:16 2016
+Tue Mar 15 20:54:22 2016
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.8.959
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.05s
 Early init took 0.01s
-Loader init took 0.01s
+Loader init took 0.00s
 Loading error handling took 0.01s
-Loading script took 0.04s
+Loading script took 0.08s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Kevin_2\\AppData\\Roaming/RenPy/backups\\Persona Special Love Edition':
 Dump and make backups. took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.000000
-Creating interface object took 0.03s
+Creating interface object took 0.02s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Save screen analysis took 0.03s
 Prepare screens took 0.02s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.00s
@@ -338,18 +339,26 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 0.739000082016s
+Total time until interface ready: 0.815999984741s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.014000 seconds.
-- Frame drawn at 0.029000 seconds.
-- Frame drawn at 0.045000 seconds.
-- Frame drawn at 0.062000 seconds.
-- 0.062000 seconds to render 5 frames.
+- Frame drawn at 0.021000 seconds.
+- Frame drawn at 0.034000 seconds.
+- Frame drawn at 0.051000 seconds.
+- Frame drawn at 0.068000 seconds.
+- 0.068000 seconds to render 5 frames.
 Cleaning stores took 0.00s
-Init translation took 0.08s
+Init translation took 0.10s
 Build styles took 0.00s
 Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Traceback (most recent call last):
+  File "H:\Program Files\renpy-6.99.8-sdk\renpy\execution.py", line 388, in run
+    node.execute()
+  File "H:\Program Files\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
+    rv = renpy.game.script.lookup(target)
+  File "H:\Program Files\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'good_end'.

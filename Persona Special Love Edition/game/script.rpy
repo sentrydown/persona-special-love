@@ -118,5 +118,6 @@ label dream:
     "She looks into my eyes..."
     "...and then takes a step forward... "
     "...and then another step and then--"
+    stop music
     jump good_end
 
