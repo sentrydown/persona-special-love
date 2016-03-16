@@ -77,8 +77,8 @@ label roof:
     "I can’t breathe."
     with hpunch
     "I’m suffocating"
-    scene black
     with vpunch
+    scene black
     "oh shit fuck im dead"
     with hpunch
     ".:. Good Ending? .:."
