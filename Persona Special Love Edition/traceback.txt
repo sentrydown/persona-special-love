@@ -1,0 +1,25 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 30, in script call
+    call opening
+  File "game/script.rpy", line 119, in script
+    jump good_end
+ScriptError: could not find label 'good_end'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 30, in script call
+    call opening
+  File "game/script.rpy", line 119, in script
+    jump good_end
+  File "H:\Program Files\renpy-6.99.8-sdk\renpy\ast.py", line 1519, in execute
+    rv = renpy.game.script.lookup(target)
+  File "H:\Program Files\renpy-6.99.8-sdk\renpy\script.py", line 843, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'good_end'.
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.8.959
+Persona Special Love Edition 0.0

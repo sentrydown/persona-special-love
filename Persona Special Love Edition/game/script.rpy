@@ -2,8 +2,12 @@
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
-image bg bedroom = "bedroom.png"
-image salt normal = "salt.png"
+image bg bedroom = "img/bedroom.png"
+image bg yard = "img/yard.jpg"
+image bg roof = "img/roof.png"
+image bg cherry = "img/cherry.png"
+image salt normal = "img/salt.png"
+image alk normal = "img/alk.png"
 
 
 # Declare characters used by this game.
@@ -23,38 +27,96 @@ define idol = Character('Geoffko', color="#ff66ff")
 
 # The game starts here.
 label start:
-    call scene1
+    call opening
     return
 
-label scene1:
-    scene bg bedroom
+label opening:
+    scene bg yard
     with fade
 
-    play music "velvet.mp3"
-    k "Where the fuck am I."
-
-    show salt normal
-    with dissolve
-    "Who is that?"
-
+    play music "img/newdays.mp3"
+    k "What the fuck."
+    k "Where the fuck am I going."
+    
     menu:
-        "Boobs":
-            jump rightaway
-        "Ass":
-            jump later
+        "Go up to the roof":
+            jump roof
+        "Go to the courtyard":
+            jump courtyard
+        "Go find Wynko":
+            jump dream
 
-label rightaway:
-
-    salt "Get the fuck out of my way."
-    ".:. Bad Ending .:."
-
-    return
-
-label later:
-
+label roof:
+    scene bg roof
+    with fade
+    "I decide to spend my graduation day down in the basement."
+    "The view up here is amazing, and to my luck it was a beautiful day outside."
+    "As the rusty metal door opens with a creek, I am met with a gentle breeze."
+    "The roof was empty with the exception of one --"
+    show alk normal at right
+    with easeinleft
+    "Alkko leans against the fence, gazing below at the students passing by the school entrance."
+    "My chest tightens at the thought of not being able to see her next year."
+    alk "Ah, Kuki-kun, did you come to check out the view for one last time as well?"
+    k "I guess so."
+    alk "The past year has been a great experience for me. I’m really going to miss this town."
+    "I recall that Alkko-senpai was planning on attending a college in America." 
+    "I heard she wanted to become a teacher."
+    "Suddenly, Alkko turns around and faces my direction, gazing deep into my eyes."
+    alk "Kuki-kun, I love you."
+    k "W-what?"
+    "Taken aback by the sudden confession, I stare in awe, unable to meet her gaze."
+    "What seemed like mere seconds lasted an eternity for me."
+    "A gentle breeze rolls in, rustling Alkko’s hair. She brushes it off with her hand."
+    "She looks at me, still determined."
+    k "I’m… not sure what to say, to be honest. You’ve never said this to me before… so it came as a surprise."
+    alk "I may not show it, but that doesn’t mean I’m in love with you."
+    "She laughs with a gentle ‘Ufufu’, covering her mouth."
+    "Then, as she steps closer, she motorboats the living shit out of me."
+    with vpunch
+    "I can’t breathe."
+    with hpunch
+    "I’m suffocating"
     scene black
-    with dissolve
-    "And then I went home."
-    ".:. Neutral Ending .:."
-
+    with vpunch
+    "oh shit fuck im dead"
+    with hpunch
+    ".:. Good Ending? .:."
     return
+    
+label courtyard:
+    scene bg cherry
+    with fade
+    "What the fuck are you fucking doing here you fucking moron this isn't implemented yet!"
+    return
+
+label dream:
+    scene bg bedroom
+    with fade
+    "I decide to spend my graduation day up on the roof."
+    "The view up here is amazing, and to my luck it was a beautiful day outside."
+    "As the rusty metal door opens with a creek, I am met with a gentle breeze."
+    "The roof was empty with the exception of one --"
+    show wynd normal
+    with moveinright
+    "Wynko leans against the fence, gazing below at the students passing by the school entrance."
+    "My chest tightens at the thought of not being able to see her next year."
+    wynd "Ah, Kuki-kun, did you come to check out the view for one last time as well?"
+    k "I guess so."
+    "Hours pass as neither of us say anything. It gets extremely awkward."
+    "Suddenly, Wyndko turns around and faces my direction, gazing deep into my eyes."
+    wynd "Kuki-kun, I love you."
+    k "W-what?"
+    "Taken aback by the sudden confession, I stare in awe, unable to meet her gaze."
+    "She looks at me, still determined."
+    k "I’m… not sure what to say, to be honest. You’ve never said this to me before… so it came as a surprise."
+    wynd "I may not show it, but that doesn’t mean I’m in love with you."
+    "We're both silent for another couple minutes."
+    "It gets extremely awkward."
+    "Extremely."
+    "Wynko suddenly moves, startling me."
+    "She looks into my eyes..."
+    "...and then takes a step forward... "
+    "...and then another step and then--"
+    jump good_end
+
