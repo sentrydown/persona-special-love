@@ -7,7 +7,7 @@ image bg yard = "img/yard.jpg"
 image bg roof = "img/roof.png"
 image bg cherry = "img/cherry.png"
 image salt normal = "img/salt.png"
-image alk normal = "img/alk.png"
+image alk normal = "img/alkko.png"
 
 
 # Declare characters used by this game.
