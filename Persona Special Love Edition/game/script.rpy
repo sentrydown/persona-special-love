@@ -49,7 +49,7 @@ label opening:
 label roof:
     scene bg roof
     with fade
-    "I decide to spend my graduation day down in the basement."
+    "I decide to spend my graduation day up on the roof."
     "The view up here is amazing, and to my luck it was a beautiful day outside."
     "As the rusty metal door opens with a creek, I am met with a gentle breeze."
     "The roof was empty with the exception of one --"
@@ -74,9 +74,12 @@ label roof:
     "She laughs with a gentle ‘Ufufu’, covering her mouth."
     "Then, as she steps closer, she motorboats the living shit out of me."
     with vpunch
+    with hpunch
     "I can’t breathe."
     with hpunch
+    with vpunch
     "I’m suffocating"
+    with hpunch
     with vpunch
     scene black
     "oh shit fuck im dead"
